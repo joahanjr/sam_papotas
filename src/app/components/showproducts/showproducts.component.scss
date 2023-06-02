@@ -1,0 +1,40 @@
+.ocultoPapas {
+  display: none;
+}
+.visiblePapas {
+  display: block !important;
+}
+.ocultoBoatanas{
+  display: none;
+}
+.visibleBotanas {
+  display: block !important;
+}
+
+.buttons{
+  display: flex;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  & p {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+  }
+  & button {
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+  }
+}
+
+.buttons button:hover{
+  background-color: rgb(243, 77, 77);
+  scale: 1.1;
+  border-radius: 5px;
+  color: rgb(254, 254, 88);
+}

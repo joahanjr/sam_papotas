@@ -14,7 +14,7 @@ html{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 80px;
+  gap: 30px;
 }
 
 .center{
@@ -30,6 +30,7 @@ html{
   cursor: pointer;
   transform-style: preserve-3d;
   transition: transform 0.8s;
+  margin-bottom: 25px;
 }
 
 .flipped {
@@ -54,3 +55,8 @@ img {
   object-fit: cover;
 }
 
+@media (min-width:800px) {
+  .container{
+    gap: 60px;
+  }
+}

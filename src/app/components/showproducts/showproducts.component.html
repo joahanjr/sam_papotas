@@ -1,0 +1,13 @@
+<div class="buttons">
+  <p>¿Qué quieres ver?</p>
+  <button (click)="togglePapas()">Papas Fritas</button>
+  <button (click)="toggleBotanas()">Botanas</button>
+</div>
+
+<div [class.ocultoPapas]="!mostrarPapas" [class.visiblePapas]="mostrarPapas">
+  <app-product></app-product>
+</div>
+
+<div [class.ocultoBotanas]="!mostrarBotanas" [class.visibleBotanas]="mostrarBotanas" class="ocultoBoatanas">
+  <app-botanas></app-botanas>
+</div>

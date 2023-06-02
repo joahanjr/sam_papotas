@@ -1,5 +1,5 @@
 export interface Product{
-  sabores: string,
+  sabores?: string,
   description?: string,
   image: string
   backImage?: string,
