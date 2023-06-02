@@ -1,0 +1,12 @@
+<div class="container">
+  <section *ngFor="let product of products" class="center">
+    <div class="image-card" [ngClass]="{ 'flipped': product.flipped }" (click)="rotataImage(product)">
+      <div class="front">
+        <img [src]="product.image" alt="">
+      </div>
+      <div class="back">
+        <img [src]="product.backImage" alt="">
+      </div>
+    </div>
+  </section>
+</div>
